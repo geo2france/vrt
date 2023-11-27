@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<OGRVRTDataSource>
+  <OGRVRTLayer name="a9084493-e742-4a2f-890b-0ebc803098df">
+    <SrcDataSource>https://www.data.gouv.fr/fr/datasets/r/a9084493-e742-4a2f-890b-0ebc803098df</SrcDataSource>
+	<GeometryType>wkbPolygon</GeometryType>
+	<GeometryField name="geom" field="geom" />
+	<LayerSRS>WGS84</LayerSRS>
+	<SrcSQL dialect="sqlite">SELECT * from friches_surfaces where dep in ('80','60','02','59','62')</SrcSQL>
+  </OGRVRTLayer>
+</OGRVRTDataSource>
