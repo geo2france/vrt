@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<OGRVRTDataSource>
+  <OGRVRTLayer name="bnlc_covoiturage_pan">
+    <SrcDataSource>https://raw.githubusercontent.com/etalab/transport-base-nationale-covoiturage/main/bnlc-.csv</SrcDataSource>
+	<SrcLayer>bnlc-</SrcLayer>
+	<GeometryType>wkbPoint</GeometryType>
+    <LayerSRS>WGS84</LayerSRS>
+    <GeometryField encoding="PointFromColumns" x="Xlong" y="Ylat"/>
+  </OGRVRTLayer>
+</OGRVRTDataSource>

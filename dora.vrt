@@ -1,0 +1,19 @@
+<OGRVRTDataSource>
+  <OGRVRTLayer name="769d4131-f739-4e6b-8ca5-0af2b09ba930">
+    <SrcDataSource relativeToVRT="0" shared="1">CSV:/vsicurl_streaming/https://metabase.dora.fabrique.social.gouv.fr/public/question/769d4131-f739-4e6b-8ca5-0af2b09ba930.csv</SrcDataSource>
+    <SrcSQL dialect="sqlite">SELECT * from "769d4131-f739-4e6b-8ca5-0af2b09ba930" where Department in ('80','62','59','60','02')</SrcSQL>
+	<GeometryType>wkbNone</GeometryType>
+    <Field name="Name" type="String" src="Name"/>
+    <Field name="Address1" type="String" src="Address1"/>
+    <Field name="City" type="String" src="City"/>
+    <Field name="Email" type="String" src="Email"/>
+    <Field name="Department" type="String" src="Department"/>
+    <Field name="Siret" type="String" src="Siret"/>
+    <Field name="Opening_Hours" type="String" src="Opening Hours"/>
+    <Field name="Opening_Hours_Details" type="String" src="Opening Hours Details"/>
+    <Field name="Service_ID" type="String" src="Service → ID"/>
+    <Field name="Service_Name" type="String" src="Service → Name"/>
+    <Field name="Service_Is_Draft" type="String" src="Service → Is Draft"/>
+    <Field name="Service_Status" type="String" src="Service → Status"/>
+  </OGRVRTLayer>
+</OGRVRTDataSource>
