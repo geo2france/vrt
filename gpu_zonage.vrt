@@ -1,6 +1,7 @@
 <OGRVRTDataSource>
   <OGRVRTLayer name="zone_urba">
-    <SrcDataSource>WFS:https://data.geopf.fr/wfs/ows?SortBy=gid</SrcDataSource>
+    <SrcDataSource>WFS:https://data.geopf.fr/wfs/ows?SortBy=gid</SrcDataSource> 
+    <!-- L'ajout d'un tri sur la colonne gid permet d'éviter une erreur serveur causée par la pagination (clé non détectée)-->
     <SrcLayer>wfs_du:zone_urba</SrcLayer>
     <GeometryField name="the_geom" field="the_geom">
             <GeometryType>wkbMultiPolygon</GeometryType>
