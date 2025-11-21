@@ -2,6 +2,70 @@
 <OGRVRTDataSource>
   <OGRVRTLayer name="7eee8f09-5d1b-4f48-a304-5e99e8da1e26">
     <SrcDataSource>https://www.data.gouv.fr/fr/datasets/r/7eee8f09-5d1b-4f48-a304-5e99e8da1e26</SrcDataSource>
+    <SrcSQL dialect="SQLite">SELECT 
+	           *,
+                CASE WHEN lower(prise_type_ef) in ('true','1') THEN 1 WHEN lower(prise_type_ef) in ('false','0') THEN 0 ELSE NULL END AS prise_type_ef_bool,
+                CASE WHEN lower(prise_type_2) in ('true','1') THEN 1 WHEN lower(prise_type_2) in ('false','0') THEN 0 ELSE NULL END AS prise_type_2_bool,
+                CASE WHEN lower(prise_type_combo_ccs) in ('true','1') THEN 1 WHEN lower(prise_type_combo_ccs) in ('false','0') THEN 0 ELSE NULL END AS prise_type_combo_ccs_bool,
+                CASE WHEN lower(prise_type_chademo) in ('true','1') THEN 1 WHEN lower(prise_type_chademo) in ('false','0') THEN 0 ELSE NULL END AS prise_type_chademo_bool,
+                CASE WHEN lower(prise_type_autre) in ('true','1') THEN 1 WHEN lower(prise_type_autre) in ('false','0') THEN 0 ELSE NULL END AS prise_type_autre_bool,
+                CASE WHEN lower(gratuit) in ('true','1') THEN 1 WHEN lower(gratuit) in ('false','0') THEN 0 ELSE NULL END AS gratuit_bool,
+                CASE WHEN lower(paiement_acte) in ('true','1') THEN 1 WHEN lower(paiement_acte) in ('false','0') THEN 0 ELSE NULL END AS paiement_acte_bool,
+                CASE WHEN lower(paiement_cb) in ('true','1') THEN 1 WHEN lower(paiement_cb) in ('false','0') THEN 0 ELSE NULL END AS paiement_cb_bool,
+                CASE WHEN lower(paiement_autre) in ('true','1') THEN 1 WHEN lower(paiement_autre) in ('false','0') THEN 0 ELSE NULL END AS paiement_autre_bool,
+                CASE WHEN lower(reservation) in ('true','1') THEN 1 WHEN lower(reservation) in ('false','0') THEN 0 ELSE NULL END AS reservation_bool,
+                CASE WHEN lower(station_deux_roues) in ('true','1') THEN 1 WHEN lower(station_deux_roues) in ('false','0') THEN 0 ELSE NULL END AS station_deux_roues_bool,
+                CASE WHEN lower(cable_t2_attache) in ('true','1') THEN 1 WHEN lower(cable_t2_attache) in ('false','0') THEN 0 ELSE NULL END AS cable_t2_attache_bool,
+                CASE WHEN lower(consolidated_is_lon_lat_correct) in ('true','1') THEN 1 WHEN lower(consolidated_is_lon_lat_correct) in ('false','0') THEN 0 ELSE NULL END AS consolidated_is_lon_lat_correct_bool,
+                CASE WHEN lower(consolidated_is_code_insee_verified) in ('true','1') THEN 1 WHEN lower(consolidated_is_code_insee_verified) in ('false','0') THEN 0 ELSE NULL END AS consolidated_is_code_insee_verified_bool,
+                CASE WHEN lower(consolidated_is_code_insee_modified) in ('true','1') THEN 1 WHEN lower(consolidated_is_code_insee_modified) in ('false','0') THEN 0 ELSE NULL END AS consolidated_is_code_insee_modified_bool
+	       FROM "7eee8f09-5d1b-4f48-a304-5e99e8da1e26"</SrcSQL>
+        <Field name="nom_enseigne" type="String" />
+        <Field name="id_station_itinerance" type="String" />
+        <Field name="id_station_local" type="String" />
+        <Field name="nom_station" type="String" />
+        <Field name="implantation_station" type="String"/>
+        <Field name="adresse_station" type="String"/>
+        <Field name="code_insee_commune" type="String"/>
+        <Field name="coordonneesxy" type="RealList" />
+        <Field name="nbre_pdc" type="Integer" />
+        <Field name="id_pdc_itinerance" type="String" />
+        <Field name="id_pdc_local" type="String" />
+        <Field name="puissance_nominale" type="Real" />
+        <Field name="prise_type_ef" type="Integer" subtype="Boolean" src="prise_type_ef_bool" />
+        <Field name="prise_type_2" type="Integer" subtype="Boolean" src="prise_type_2_bool" />
+        <Field name="prise_type_combo_ccs" type="Integer" subtype="Boolean" src="prise_type_combo_ccs_bool"  />
+        <Field name="prise_type_chademo" type="Integer" subtype="Boolean" src="prise_type_chademo_bool"  />
+        <Field name="prise_type_autre" type="Integer" subtype="Boolean" src="prise_type_autre_bool"  />
+        <Field name="gratuit" type="Integer" subtype="Boolean" src="gratuit_bool" />
+        <Field name="paiement_acte" type="Integer" subtype="Boolean" src="paiement_acte_bool" />
+        <Field name="paiement_cb" type="Integer" subtype="Boolean" src="paiement_cb_bool" />
+        <Field name="paiement_autre" type="Integer" subtype="Boolean" src="paiement_autre_bool" />
+        <Field name="tarification" type="String" />
+        <Field name="condition_acces" type="String" />
+        <Field name="reservation" type="Integer" subtype="Boolean" src="reservation_bool"/>
+        <Field name="horaires" type="String" />
+        <Field name="accessibilite_pmr" type="String" />
+        <Field name="restriction_gabarit"  type="String" />
+        <Field name="station_deux_roues" type="Integer" subtype="Boolean" src="station_deux_roues_bool"/>
+        <Field name="raccordement" type="String" />
+        <Field name="num_pdl" type="String" />
+        <Field name="date_mise_en_service" type="Date" />
+        <Field name="observations" type="String" />
+        <Field name="date_maj" type="Date" />
+        <Field name="cable_t2_attache" type="Integer" subtype="Boolean" src="cable_t2_attache_bool"/>
+        <Field name="last_modified" type="Date" />
+        <Field name="datagouv_dataset_id" type="String"  />
+        <Field name="datagouv_resource_id"  type="String" />
+        <Field name="datagouv_organization_or_owner"  type="String"  />
+        <Field name="created_at" type="Date" />
+        <Field name="consolidated_longitude" type="Real" />
+        <Field name="consolidated_latitude" type="Real" />
+        <Field name="consolidated_code_postal" type="String" />
+        <Field name="consolidated_commune" type="String"/>
+        <Field name="consolidated_is_lon_lat_correct" type="Integer" subtype="Boolean" src="consolidated_is_lon_lat_correct_bool"/>
+        <Field name="consolidated_is_code_insee_verified" type="Integer" subtype="Boolean" src="consolidated_is_code_insee_verified_bool"/>
+        <Field name="consolidated_is_code_insee_modified" type="Integer" subtype="Boolean" src="consolidated_is_code_insee_modified_bool"/>
 	<GeometryType>wkbPoint</GeometryType>
 	<LayerSRS>WGS84</LayerSRS>
     <GeometryField encoding="PointFromColumns" x="consolidated_longitude" y="consolidated_latitude"/>
