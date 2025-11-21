@@ -1,0 +1,29 @@
+<!--Commerces issues d'OpenStreetMap. Source pour la Bretagne https://geodatamine.fr/data/shop_craft_office/-102740?format=csv&aspoint=true -->
+<?xml version="1.0" encoding="UTF-8"?>
+<OGRVRTDataSource>
+    <OGRVRTLayer name="commerce">
+        <SrcDataSource relativeToVRT="1">commerce.csv</SrcDataSource>
+        <SrcLayer>commerce</SrcLayer>
+        <Field name="x" src="X" type="Real"/>
+        <Field name="y" src="Y" type="Real"/>
+        <Field name="osm_id" src="osm_id" type="String"/>
+        <Field name="type" src="type" type="String"/>
+        <Field name="nom" src="name" type="String"/>
+        <Field name="marque" src="brand" type="String"/>
+        <Field name="operateur" src="operator" type="String"/>
+        <Field name="acces_fauteuil_roulant" src="wheelchair" type="String"/>
+        <Field name="horaires" src="opening_hours" type="String"/>
+        <Field name="siret" src="siret" type="String"/>
+        <Field name="site_web" src="website" type="String"/>
+        <Field name="telephone" src="phone" type="String"/>
+        <Field name="email" src="email" type="String"/>
+        <Field name="facebook" src="facebook" type="String"/>
+        <Field name="addresse" src="address" type="String"/>
+        <Field name="com_insee" src="com_insee" type="String"/>
+        <Field name="com_nom" src="com_nom" type="String"/>
+        <Field name="derniere_modif" src="last_update" type="Date"/>
+        <GeometryType>wkbPoint</GeometryType>
+        <LayerSRS>EPSG:4326</LayerSRS>
+        <GeometryField encoding="PointFromColumns" x="x" y="y"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>
