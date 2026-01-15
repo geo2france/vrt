@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OGRVRTDataSource>
+    <OGRVRTLayer name="passsport">
+    <SrcDataSource relativeToVRT="1">CSV:/vsicurl/https://www.data.gouv.fr/api/1/datasets/r/ba29e518-3595-424e-93e7-feca5c5747bc</SrcDataSource>
+		<SrcLayer>ba29e518-3595-424e-93e7-feca5c5747bc</SrcLayer>
+		<SrcSQL dialect="sqlite">SELECT * from "ba29e518-3595-424e-93e7-feca5c5747bc" where region = 'Bretagne'</SrcSQL>
+        <Field name="beneficiaire_age" src="beneficiaire_age" type="String"/>
+        <Field name="beneficiaire_sexe" src="beneficiaire_sexe" type="String"/>
+        <Field name="organisme" src="organisme" type="String"/>
+        <Field name="date_recours_pass_sport" src="date_recours_pass_sport" type="String"/>
+        <Field name="federation" src="federation" type="String"/>
+        <Field name="region" src="region" type="String"/>
+        <Field name="departement" src="departement" type="String"/>
+        <Field name="commune" src="commune" type="String"/>
+        <Field name="code_insee" src="code_insee" type="String"/>
+        <Field name="code_postal" src="code_postal" type="String"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>

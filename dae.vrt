@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OGRVRTDataSource>
+    <OGRVRTLayer name="dae">
+    <SrcDataSource relativeToVRT="1">CSV:/vsicurl/https://www.data.gouv.fr/fr/datasets/r/edb6a9e1-2f16-4bbf-99e7-c3eb6b90794c</SrcDataSource>
+		<SrcLayer>edb6a9e1-2f16-4bbf-99e7-c3eb6b90794c</SrcLayer>
+        <Field name="gid" src="gid" type="Integer"/>
+        <Field name="c_etat_valid" src="c_etat_valid" type="String"/>
+        <Field name="c_nom" src="c_nom" type="String"/>
+        <Field name="c_x_coor2" src="c_x_coor2" type="Real"/>
+        <Field name="c_y_coor2" src="c_y_coor2" type="Real"/>
+        <Field name="c_xy_precis" src="c_xy_precis" type="Real"/>
+        <Field name="c_id_adr" src="c_id_adr" type="String"/>
+        <Field name="c_adr_num" src="c_adr_num" type="String"/>
+        <Field name="c_adr_voie" src="c_adr_voie" type="String"/>
+        <Field name="c_com_cp" src="c_com_cp" type="String"/>
+        <Field name="c_com_insee" src="c_com_insee" type="String"/>
+        <Field name="c_com_nom" src="c_com_nom" type="String"/>
+        <Field name="c_acc" src="c_acc" type="String"/>
+        <Field name="c_acc_lib" src="c_acc_lib" type="Integer"/>
+        <Field name="c_acc_pcsec" src="c_acc_pcsec" type="Integer"/>
+        <Field name="c_acc_acc" src="c_acc_acc" type="Integer"/>
+        <Field name="c_acc_etg" src="c_acc_etg" type="String"/>
+        <Field name="c_acc_complt" src="c_acc_complt" type="String"/>
+        <Field name="c_photo1" src="c_photo1" type="String"/>
+        <Field name="c_photo2" src="c_photo2" type="String"/>
+		<Field name="c_disp_j" src="c_disp_j" type="String"/>
+        <Field name="c_disp_h" src="c_disp_h" type="String"/>
+        <Field name="c_disp_complt" src="c_disp_complt" type="String"/>
+        <Field name="c_date_instal" src="c_date_instal" type="Date"/>
+        <Field name="c_etat_fonct" src="c_etat_fonct" type="String"/>
+        <Field name="c_lc_ped" src="c_lc_ped" type="Integer"/>
+        <Field name="c_dtpr_lcped" src="c_dtpr_lcped" type="Date"/>
+        <Field name="c_dtpr_lcad" src="c_dtpr_lcad" type="Date"/>
+        <Field name="c_dtpr_bat" src="c_dtpr_bat" type="Date"/>
+        <Field name="c_freq_mnt" src="c_freq_mnt" type="String"/>
+        <Field name="c_dispsurv" src="c_dispsurv" type="Integer"/>
+        <Field name="c_dermnt" src="c_dermnt" type="Date"/>
+        <Field name="c_maj_don" src="c_maj_don" type="Date"/>
+        <Field name="c_expt_siren" src="c_expt_siren" type="String"/>
+        <Field name="c_expt_rais" src="c_expt_rais" type="String"/>
+        <Field name="c_etat" src="c_etat" type="String"/>
+        <Field name="c_application_provenance" src="c_application_provenance" type="String"/>
+        <Field name="c_doublon" src="c_doublon" type="Integer"/>
+        <Field name="c__edit_datemaj" src="c__edit_datemaj" type="DateTime"/>
+        <Field name="c_srid_origin" src="c_srid_origin" type="String"/>
+        <Field name="cc_photo1" src="cc_photo1" type="String"/>
+        <GeometryType>wkbPoint</GeometryType>
+        <LayerSRS>EPSG:4326</LayerSRS>
+        <GeometryField encoding="PointFromColumns" x="c_long_coor1" y="c_lat_coor1"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>

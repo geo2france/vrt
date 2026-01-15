@@ -1,0 +1,114 @@
+<!-- equipements sportifs https://www.data.gouv.fr/api/1/datasets/r/ea4f5879-af40-4e3e-949d-812d6eeb5e02 -->
+<?xml version="1.0" encoding="UTF-8"?>
+<OGRVRTDataSource>
+    <OGRVRTLayer name="equipement_sportif">
+        <SrcDataSource relativeToVRT="1">es.csv</SrcDataSource>
+        <!--Header=False-->
+        <SrcLayer>es</SrcLayer>
+        <Field name="inst_numero" src="inst_numero" type="String"/>
+        <Field name="inst_nom" src="inst_nom" type="String"/>
+        <Field name="inst_adresse" src="inst_adresse" type="String"/>
+        <Field name="inst_cp" src="inst_cp" type="String"/>
+        <Field name="code_insee" src="new_code" type="String"/>
+        <Field name="nom_commune" src="new_name" type="String"/>
+        <Field name="inst_date_creation" src="inst_date_creation" type="Date"/>
+        <Field name="inst_date_etat" src="inst_date_etat" type="Date"/>
+        <Field name="inst_acc_handi_bool" src="inst_acc_handi_bool" type="String"/>
+        <Field name="inst_enqu_date" src="inst_enqu_date" type="Date"/>
+        <Field name="inst_obs" src="inst_obs" type="String"/>
+        <Field name="inst_trans_bool" src="inst_trans_bool" type="String"/>
+        <Field name="inst_part_bool" src="inst_part_bool" type="String"/>
+        <Field name="inst_part_type" src="inst_part_type" type="String"/>
+        <Field name="inst_part_type_filter" src="inst_part_type_filter" type="String"/>
+        <Field name="inst_acc_handi_type" src="inst_acc_handi_type" type="String"/>
+        <Field name="inst_trans_type" src="inst_trans_type" type="String"/>
+        <Field name="inst_siret" src="inst_siret" type="String"/>
+        <Field name="inst_uai" src="inst_uai" type="String"/>
+        <Field name="inst_hs_bool" src="inst_hs_bool" type="String"/>
+        <Field name="equip_numero" src="equip_numero" type="String"/>
+        <Field name="equip_nom" src="equip_nom" type="String"/>
+        <Field name="equip_type_code" src="equip_type_code" type="String"/>
+        <Field name="equip_type_name" src="equip_type_name" type="String"/>
+        <Field name="equip_type_famille" src="equip_type_famille" type="String"/>
+        <Field name="equip_x" src="equip_x" type="Real"/>
+        <Field name="equip_y" src="equip_y" type="Real"/>
+        <Field name="equip_eclair" src="equip_eclair" type="String"/>
+        <Field name="equip_acc_libre" src="equip_acc_libre" type="String"/>
+        <Field name="equip_ouv_public_bool" src="equip_ouv_public_bool" type="String"/>
+        <Field name="equip_loc_bool" src="equip_loc_bool" type="String"/>
+        <Field name="equip_saison" src="equip_saison" type="String"/>
+        <Field name="equip_douche" src="equip_douche" type="String"/>
+        <Field name="equip_sanit" src="equip_sanit" type="String"/>
+        <Field name="equip_dsp" src="equip_dsp" type="String"/>
+        <Field name="equip_pmr_acc" src="equip_pmr_acc" type="String"/>
+        <Field name="equip_pmr_aire" src="equip_pmr_aire" type="String"/>
+        <Field name="equip_pmr_chem" src="equip_pmr_chem" type="String"/>
+        <Field name="equip_pmr_douche" src="equip_pmr_douche" type="String"/>
+        <Field name="equip_pmr_sanit" src="equip_pmr_sanit" type="String"/>
+        <Field name="equip_pmr_trib" src="equip_pmr_trib" type="String"/>
+        <Field name="equip_pmr_vest" src="equip_pmr_vest" type="String"/>
+        <Field name="equip_pshs_aire" src="equip_pshs_aire" type="String"/>
+        <Field name="equip_pshs_chem" src="equip_pshs_chem" type="String"/>
+        <Field name="equip_pshs_sanit" src="equip_pshs_sanit" type="String"/>
+        <Field name="equip_pshs_sign" src="equip_pshs_sign" type="String"/>
+        <Field name="equip_pshs_trib" src="equip_pshs_trib" type="String"/>
+        <Field name="equip_pshs_vest" src="equip_pshs_vest" type="String"/>
+        <Field name="equip_homo_date" src="equip_homo_date" type="String"/>
+        <Field name="equip_travaux_date" src="equip_travaux_date" type="String"/>
+        <Field name="equip_erp_cat" src="equip_erp_cat" type="String"/>
+        <Field name="equip_haut" src="equip_haut" type="Real"/>
+        <Field name="equip_larg" src="equip_larg" type="Real"/>
+        <Field name="equip_long" src="equip_long" type="Real"/>
+        <Field name="equip_surf" src="equip_surf" type="Real"/>
+        <Field name="equip_piste_nb" src="equip_piste_nb" type="Real"/>
+        <Field name="equip_trib_nb" src="equip_trib_nb" type="Real"/>
+        <Field name="equip_vest_ens" src="equip_vest_ens" type="Real"/>
+        <Field name="equip_vest_sport" src="equip_vest_sport" type="Real"/>
+        <Field name="equip_sae_couloir" src="equip_sae_couloir" type="Real"/>
+        <Field name="equip_sae_haut" src="equip_sae_haut" type="Real"/>
+        <Field name="equip_sae_surf" src="equip_sae_surf" type="Real"/>
+        <Field name="equip_bassin_long" src="equip_bassin_long" type="Real"/>
+        <Field name="equip_bassin_larg" src="equip_bassin_larg" type="Real"/>
+        <Field name="equip_bassin_surf" src="equip_bassin_surf" type="Real"/>
+        <Field name="equip_bassin_min" src="equip_bassin_min" type="Real"/>
+        <Field name="equip_bassin_max" src="equip_bassin_max" type="Real"/>
+        <Field name="equip_piste_long" src="equip_piste_long" type="Real"/>
+        <Field name="equip_url" src="equip_url" type="String"/>
+        <Field name="equip_service_date" src="equip_service_date" type="String"/>
+        <Field name="equip_prop_nom" src="equip_prop_nom" type="String"/>
+        <Field name="equip_obs" src="equip_obs" type="String"/>
+        <Field name="equip_conf_type" src="equip_conf_type" type="String"/>
+        <Field name="equip_erp_type" src="equip_erp_type" type="String"/>
+        <Field name="equip_loc_type" src="equip_loc_type" type="String"/>
+        <Field name="equip_travaux_type" src="equip_travaux_type" type="String"/>
+        <Field name="equip_energie" src="equip_energie" type="String"/>
+        <Field name="equip_utilisateur" src="equip_utilisateur" type="String"/>
+        <Field name="equip_pasdetir" src="equip_pasdetir" type="String"/>
+        <Field name="equip_sol" src="equip_sol" type="String"/>
+        <Field name="equip_nature" src="equip_nature" type="String"/>
+        <Field name="equip_service_periode" src="equip_service_periode" type="String"/>
+        <Field name="equip_homo_periode" src="equip_homo_periode" type="String"/>
+        <Field name="equip_travaux_periode" src="equip_travaux_periode" type="String"/>
+        <Field name="equip_prop_type" src="equip_prop_type" type="String"/>
+        <Field name="equip_propsec_type" src="equip_propsec_type" type="String"/>
+        <Field name="equip_gest_type" src="equip_gest_type" type="String"/>
+        <Field name="equip_cogest_type" src="equip_cogest_type" type="String"/>
+        <Field name="equip_pdesi_pdipr" src="equip_pdesi_pdipr" type="String"/>
+        <Field name="equip_rnb" src="equip_rnb" type="String"/>
+        <Field name="epci_code" src="epci_code" type="String"/>
+        <Field name="epci_nom" src="epci_nom" type="String"/>
+        <Field name="code_bdv" src="code_bdv" type="String"/>
+        <Field name="lib_bdv" src="lib_bdv" type="String"/>
+        <Field name="dep_code" src="dep_code" type="String"/>
+        <Field name="dep_nom" src="dep_nom" type="String"/>
+        <Field name="reg_code" src="reg_code" type="String"/>
+        <Field name="reg_nom" src="reg_nom" type="String"/>
+        <Field name="dens_niveau" src="dens_niveau" type="String"/>
+        <Field name="dens_lib" src="dens_lib" type="String"/>
+        <Field name="zrr_simp" src="zrr_simp" type="String"/>
+        <Field name="categorie" src="categorie" type="String"/>
+        <GeometryType>wkbPoint</GeometryType>
+        <LayerSRS>EPSG:4326</LayerSRS>
+        <GeometryField encoding="PointFromColumns" x="equip_x" y="equip_y"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>

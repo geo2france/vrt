@@ -1,0 +1,58 @@
+<!-- Usage d'un fichier download.list wget -O basilic.csv "https://data.culture.gouv.fr/api/explore/v2.1/catalog/datasets/base-des-lieux-et-des-equipements-culturels/exports/csv" -->
+<?xml version="1.0" encoding="UTF-8"?>
+<OGRVRTDataSource>
+    <OGRVRTLayer name="basilic">
+        <SrcDataSource relativeToVRT="1">basilic.csv</SrcDataSource>
+        <!--Header=False-->
+        <SrcLayer>basilic</SrcLayer>
+        <Field name="nom" src="nom" type="String"/>
+        <Field name="adresse" src="adresse" type="String"/>
+        <Field name="complement_adresse" src="complement_adresse" type="String"/>
+        <Field name="code_postal" src="code_postal" type="String"/>
+        <Field name="libelle_geographique" src="libelle_geographique" type="String"/>
+        <Field name="code_insee" src="code_insee" type="String"/>
+        <Field name="type_equipement_ou_lieu" src="type_equipement_ou_lieu" type="String"/>
+        <Field name="label_et_appellation" src="label_et_appellation" type="String"/>
+        <Field name="region" src="region" type="String"/>
+        <Field name="domaine" src="domaine" type="String"/>
+        <Field name="adresse_postale" src="adresse_postale" type="String"/>
+        <Field name="departement" src="departement" type="String"/>
+        <Field name="precision_equipement" src="precision_equipement" type="String"/>
+        <Field name="n_departement" src="n_departement" type="String"/>
+        <Field name="n_region" src="n_region" type="String"/>
+        <Field name="fonction_1" src="fonction_1" type="String"/>
+        <Field name="fonction_2" src="fonction_2" type="String"/>
+        <Field name="fonction_3" src="fonction_3" type="String"/>
+        <Field name="fonction_4" src="fonction_4" type="String"/>
+        <Field name="multiplexe" src="multiplexe" type="String"/>
+        <Field name="type_de_cinema" src="type_de_cinema" type="String"/>
+        <Field name="nombre_fauteuils_de_cinema" src="nombre_fauteuils_de_cinema" type="String"/>
+        <Field name="nombre_ecrans" src="nombre_ecrans" type="String"/>
+        <Field name="nombre_de_salles_de_theatre" src="nombre_de_salles_de_theatre" type="String"/>
+        <Field name="organisme_siege_du_theatre" src="organisme_siege_du_theatre" type="String"/>
+        <Field name="jauge_du_theatre" src="jauge_du_theatre" type="String"/>
+        <Field name="code_du_reseau_de_bibliotheques" src="code_du_reseau_de_bibliotheques" type="String"/>
+        <Field name="nom_du_reseau_de_bibliotheques" src="nom_du_reseau_de_bibliotheques" type="String"/>
+        <Field name="nom_de_l_illustre" src="nom_de_l_illustre" type="String"/>
+        <Field name="surface_bibliotheque" src="surface_bibliotheque" type="String"/>
+        <Field name="rang" src="rang" type="String"/>
+        <Field name="ident" src="ident" type="String"/>
+        <Field name="libelle_epci" src="libelle_epci" type="String"/>
+        <Field name="code_insee_epci" src="code_insee_epci" type="String"/>
+        <Field name="precision_protection_sites_et_monuments" src="precision_protection_sites_et_monuments" type="String"/>
+        <Field name="sous_domaine" src="sous_domaine" type="String"/>
+        <Field name="latitude" src="latitude" type="String"/>
+        <Field name="longitude" src="longitude" type="String"/>
+        <Field name="demographie_ap" src="demographie_ap" type="String"/>
+        <Field name="demographie_detail_entree" src="demographie_detail_entree" type="String"/>
+        <Field name="demographie_detail_sortie" src="demographie_detail_sortie" type="String"/>
+        <Field name="multi_equipements" src="multi_equipements" type="String"/>
+        <Field name="identifiant_qpv_24" src="identifiant_qpv_24" type="String"/>
+        <Field name="identifiant_qpv_15" src="identifiant_qpv_15" type="String"/>
+        <Field name="iris" src="Iris" type="String"/>
+        <Field name="source" src="Source" type="String"/>
+        <GeometryType>wkbPoint</GeometryType>
+        <LayerSRS>EPSG:4326</LayerSRS>
+        <GeometryField encoding="PointFromColumns" x="longitude" y="latitude"/>		
+    </OGRVRTLayer>
+</OGRVRTDataSource>

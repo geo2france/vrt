@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OGRVRTDataSource>
+    <OGRVRTLayer name="ban_communes">
+        <SrcDataSource relativeToVRT="1">https://plateforme.adresse.data.gouv.fr/api/communes-summary.csv</SrcDataSource>
+        <!--Header=False-->
+        <SrcLayer>communes-summary</SrcLayer>
+        <Field name="region" src="region" type="Integer"/>
+        <Field name="departement" src="departement" type="String"/>
+        <Field name="code_commune" src="code_commune" type="String"/>
+        <Field name="nom_commune" src="nom_commune" type="String"/>
+        <Field name="population" src="population" type="Integer"/>
+        <Field name="id_revision" src="id_revision" type="String"/>
+        <Field name="date_revision" src="date_revision" type="Date"/>
+        <Field name="type_composition" src="type_composition" type="String"/>
+        <Field name="nb_lieux_dits" src="nb_lieux_dits" type="Integer"/>
+        <Field name="nb_voies" src="nb_voies" type="Integer"/>
+        <Field name="nb_numeros" src="nb_numeros" type="Integer"/>
+        <Field name="nb_numeros_certifies" src="nb_numeros_certifies" type="Integer"/>
+        <Field name="analyse_adressage_nb_adresses_attendues" src="analyse_adressage_nb_adresses_attendues" type="Integer"/>
+        <Field name="analyse_adressage_ratio" src="analyse_adressage_ratio" type="Integer"/>
+        <Field name="analyse_adressage_deficit_adresses" src="analyse_adressage_deficit_adresses" type="Integer"/>
+        <Field name="composed_at" src="composed_at" type="Date"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>
+

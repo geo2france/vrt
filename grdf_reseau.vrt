@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<OGRVRTDataSource>
+  <OGRVRTLayer name="reseau_gaz_2">
+    <SrcDataSource>https://opendata.grdf.fr/api/explore/v2.1/catalog/datasets/cartographie-du-reseau-grdf-en-service/exports/geojson</SrcDataSource>
+	<GeometryType>wkbMultiLineString</GeometryType>
+	<LayerSRS>WGS84</LayerSRS>
+  </OGRVRTLayer>
+</OGRVRTDataSource>

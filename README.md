@@ -12,11 +12,17 @@ Liste des fichiers VRT en prod sur Géo2France
 * Ces tables sont ensuite publiées par geoserver pour produire des flux OGC interopérables, utilisables dans des visionneuse cartographiques, des tableaux de bord, etc
 
   ## Description des VRT
+  * [ban_communes.vrt](ban_communes.vrt) : récupère les données d'avancement du déploiement de la base adresse nationale à la commune sur data.gouv
+  * [basilic.vrt](basilic.vrt) : récupère les données d'avancement du déploiement de la base adresse nationale à la commune sur data.gouv   
+  * [bnlc_coiturage_pan.vrt](bnlc_coiturage_pan.vrt) : récupère les données des aires de covoiturage sur data.gouv 
   * [cartofriche_gpkg.vrt](cartofriche_gpkg.vrt) : récupère les données cartofriche sur data.gouv et filtre les données sur les 5 départements des Hauts-de-France
-  * [irve_geojson.vrt](irve_geojson.vrt) : récupère les données des installations de recharge des véhicules éléctrique (IRVE) sur data.gouv et découpe les données géographiquement à la région Hauts-de-France
-  * [bnlc_coiturage_pan.vrt](bnlc_coiturage_pan.vrt) : récupère les données des aires de covoiturage sur data.gouv
+  * [commerce.vrt](commerce.vrt) : récupère les données d'OpentStreetMap des commerces sur geodatamine  
+  * [dae.vrt](dae.vrt) : récupère les données des défibrillateurs automatisés externes (DAE) sur data.gouv  
   * [dora.vrt](dora.vrt) : récupère les données des strucutres qui luttent contre l'illetrisme publiées sur la plateforme de l'inclusion (DORA dora.inclusion.beta.gouv.fr), filtre les données sur les 5 départements des Hauts-de-France, et renomme les champs en supprimant les caractères exotiques
-  * [parcelle_forestiere.vrt](parcelle_forestiere.vrt) : récupère les délimitations des parcelles forestières sur un flux WFS, filtrés géographiquement sur l'emprise de la région Hauts-de-France.
+  * [es.vrt](dae.vrt) : récupère les données des équipements sportifs sur data.gouv   
+  * [irve_geojson.vrt](irve_geojson.vrt) : récupère les données des installations de recharge des véhicules éléctrique (IRVE) sur data.gouv et découpe les données géographiquement à la région Hauts-de-France
+  * [parcelle_forestiere.vrt](parcelle_forestiere.vrt) : récupère les délimitations des parcelles forestières sur un flux WFS, filtrés géographiquement sur l'emprise de la région Hauts-de-France
+  * [passsport.vrt](passsport.vrt) : récupère les données du pass Sport sur data.gouv avec un filtre sur la Région Bretagne
   * [zonage_inventaire_inpn.vrt](zonage_inventaire_inpn.vrt) : regoupe plusieurs flux WFS en une seule couche en ajoutant un champ _type_ contenant le nom de la couche (=le type de protection) + filtre géographique sur l'emprise de la région Hauts-de-France.
   * [zonage_nat2000_inpn.vrt](zonage_nat2000_inpn.vrt) : regoupe plusieurs flux WFS en une seule couche en ajoutant un champ _type_ contenant le nom de la couche (=le type de protection) + filtre géographique sur l'emprise de la région Hauts-de-France.
   * [zonage_protection_inpn.vrt](zonage_protection_inpn.vrt) : regoupe plusieurs flux WFS en une seule couche en ajoutant un champ _type_ contenant le nom de la couche (=le type de protection) + filtre géographique sur l'emprise de la région Hauts-de-France.
