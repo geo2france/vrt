@@ -1,0 +1,9 @@
+<OGRVRTDataSource>
+    <OGRVRTLayer name="commerce_osm">
+        <SrcDataSource>CSV:/vsicurl_streaming/https://geodatamine.fr/data/shop_craft_office/-4217435?format=csv&amp;aspoint=true</SrcDataSource>
+        <SrcLayer>-4217435?format=csv&amp;aspoint=true</SrcLayer>
+        <GeometryType>wkbPoint</GeometryType>
+        <LayerSRS>EPSG:4326</LayerSRS>
+		<GeometryField encoding="PointFromColumns" x="x" y="y"/>
+    </OGRVRTLayer>
+</OGRVRTDataSource>
