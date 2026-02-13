@@ -1,0 +1,10 @@
+<OGRVRTDataSource>
+  <OGRVRTLayer name="indicateurs_contexte">
+    <SrcDataSource>XLSX:/vsicurl_streaming/https://www.geo2france.fr/portal/rest/jcr/repository/collaboration/Groups/spaces/indicateurs_com27_pams/Documents/data/indicateurs_contexte.xlsx</SrcDataSource>
+    <SrcLayer>est_oise_contexte</SrcLayer>
+	<GeometryType>wkbNone</GeometryType>
+	<OpenOptions>
+		<OOI key="HEADERS">FORCE</OOI>
+	</OpenOptions>
+  </OGRVRTLayer>
+</OGRVRTDataSource>
