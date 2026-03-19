@@ -1,0 +1,10 @@
+<OGRVRTDataSource>
+  <OGRVRTLayer name="sdaasps59_cultures">
+    <SrcDataSource>XLSX:/vsicurl_streaming/https://www.geo2france.fr/portal/rest/jcr/repository/collaboration/Groups/spaces/mise_en2_uvre_du_sdaasp_du_nord_2025_20304_les_services_publics_au_c_ur_des_territoires/Documents/data/structures_culturelles.xlsx</SrcDataSource>
+    <SrcLayer>structure</SrcLayer>
+	<GeometryType>wkbNone</GeometryType>
+	<OpenOptions>
+		<OOI key="HEADERS">FORCE</OOI>
+	</OpenOptions>
+  </OGRVRTLayer>
+</OGRVRTDataSource>
