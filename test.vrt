@@ -3,6 +3,16 @@
     <SrcDataSource>XLSX:/vsicurl_streaming/https://www.geo2france.fr/portal/rest/jcr/repository/collaboration/Groups/spaces/mise_en2_uvre_du_sdaasp_du_nord_2025_20304_les_services_publics_au_c_ur_des_territoires/Documents/data/test.xlsx</SrcDataSource>
     <SrcLayer>structure</SrcLayer>
 	<GeometryType>wkbNone</GeometryType>
+	<Field name="porteur" type="string"/>
+	<Field name="filiere" type="string"/>
+	<Field name="siret" type="string"/>
+	<Field name="siren" type="string"/>
+	<Field name="web" type="string"/>
+	<Field name="code_postal" type="string"/>
+	<Field name="ville" type="string"/>
+	<Field name="arrondissement" type="string"/>
+	<Field name="canton" type="string"/>
+	<Field name="epci" type="string"/>
 	<OpenOptions>
 		<OOI key="HEADERS">FORCE</OOI>
 	</OpenOptions>
