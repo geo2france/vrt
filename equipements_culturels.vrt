@@ -6,7 +6,7 @@
 	<GeometryType>wkbPoint</GeometryType>
     <LayerSRS>WGS84</LayerSRS>
     <GeometryField encoding="PointFromColumns" x="Longitude" y="Latitude"/>
-	<Field name="nom" src="rep" type="string"/>
+	<Field name="nom" src="nom" type="string"/>
 	<Field name="adresse" src="adresse" type="string"/>
 	<Field name="cplt_adresse" src="complement adresse" type="string"/>
 	<Field name="code_postal" src="code postal" type="string"/>
