@@ -35,7 +35,6 @@
 	<Field name="jauge_du_theatre" src="jauge_du_theatre" type="integer"/>
 	<Field name="code_du_reseau_de_bibliotheques" src="code_du_reseau_de_bibliotheques" type="string"/>
 	<Field name="nom_du_reseau_de_bibliotheques" src="nom_du_reseau_de_bibliotheques" type="string"/>
-	<Field name="nom_de_l_illustre" src="nom_de_l_illustre" type="string"/>
 	<Field name="surface_bibliotheque" src="surface_bibliotheque" type="integer"/>
 	<Field name="rang" src="rang" type="string"/>
 	<Field name="identifiant_deps_a_partir_de_2022" src="identifiant_deps_a_partir_de_2022" type="string"/>
