@@ -1,6 +1,6 @@
 <OGRVRTDataSource>
   <OGRVRTLayer name="structures_culturelles">
-    <SrcDataSource>XLSX:/vsicurl_streaming/https://www.geo2france.fr/portal/rest/jcr/repository/collaboration/Groups/spaces/mise_en2_uvre_du_sdaasp_du_nord_2025_20304_les_services_publics_au_c_ur_des_territoires/Documents/data/structures_culturelles.xlsx</SrcDataSource>
+    <SrcDataSource>XLSX:/vsicurl_streaming/https://www.geo2france.fr/portal/rest/jcr/repository/collaboration/Groups/spaces/mise_en2_uvre_du_sdaasp_du_nord_2025_20304_les_services_publics_au_c_ur_des_territoires/Documents/06_ data/structures_culturelles.xlsx</SrcDataSource>
     <SrcLayer>structure</SrcLayer>
 	<GeometryType>wkbNone</GeometryType>
 	<Field name="porteur" type="string"/>
